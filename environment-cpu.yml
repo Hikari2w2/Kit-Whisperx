@@ -3,12 +3,15 @@ channels:
   - defaults
   - conda-forge
   - pytorch
+  - nvidia
 dependencies:
   - python=3.10
   - pytorch=2.0.0
   - torchaudio=2.0.0
-  - conda-forge::gradio
+  - pytorch-cuda=11.8
+  - conda-forge::gradio=4.37.2
   - conda-forge::ffmpeg
+  - numpy=1.26.4
   - pip
   - pip:
-      - whisperx
+      - whisperx==3.1.4
